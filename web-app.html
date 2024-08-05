@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(152, 206, 249);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .body{
+            border-style:solid ;
+            height: 600px;
+            border-radius: 5px;
+            border-color: rgb(0, 140, 254);
+            width: 1000px;
+            background-color: white;
+            display: flex;
+        }
+        .MyDocs{
+            display: block;
+            flex: 1;
+            justify-items: center;
+        }
+        .MyDocs img{
+            height: 20px;
+            display: block;
+            
+            
+        }
+        .nav{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+           
+        }
+        
+        .mid{
+            flex: 4;
+            background-color: rgb(180, 210, 255);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .search-bar {
+            flex: 1;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            
+        }
+        .search-button {
+            display: inline;
+            background-color: #fff;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .search-bar:focus {
+            padding: 10px;
+        }
+        .search-button:hover {
+            border-color: maroon;
+        }
+        .search-img {
+            height: 36px;
+            vertical-align: middle;
+        }
+        .Quick{
+           display: flex;
+        }
+        .Images, .Music, .Video, .Docs, .Apps, .Download{
+            flex: 1;
+            
+            justify-content: center;
+           
+        }
+        .images{
+            height: 40px;
+        }
+        .preview{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="MyDocs">
+            <div class="nav">
+                <h3>
+                    MyDocs
+                </h3>
+            </div>
+            
+            <div class="nav">
+            <img src="images/menu_8917404.png" alt="">
+            </div>
+            <div class="nav">
+                <img src="images/folder_15455980.png" alt="">
+
+            </div>
+            <div class="nav">
+                <img src="images/floppy-disk_1828828.png" alt="">
+
+            </div>
+            <div class="nav">
+                <img src="images/settings.png" alt="">
+
+            </div>
+            <div class="nav" style="margin-top: 270px;">
+                <img src="images/logout.png" alt="">
+
+            </div>
+        </div>
+        <div class="mid">
+            <div style="display: flex; align-items: center;margin-top: 10px;">
+                <input class="search-bar" type="text" placeholder="e.g. files.doc">
+                <div class="tooltip-container">
+                    <button class="search-button"><img class="search-img" src="images/search-bar-01.jpg" alt="Search">
+                        
+                    </button>
+                </div>
+            </div>
+            <div style="margin-top: 100px;">
+                <h3 style="font-family: Arial, Helvetica, sans-serif;">Quick Access</h3>
+            </div>
+            <div class="Quick">
+                <div class="Images">
+                    <div style="justify-content: center;">
+                        <img class="images" src="images/photo.png" alt="">
+                    </div>
+                    <div>
+                        <p>Images</p>
+                    </div>
+                </div>
+                <div class="Music">
+                    <img class="images" src="images/musical-note.png" alt="">
+                    <p>Music</p>
+                </div>
+                <div class="Video">
+                    <img class="images"  src="images/play-button.png" alt="">
+                    <p>Video</p>
+                </div>
+                <div class="Docs">
+                    <img class="images"  src="images/google-docs.png" alt="">
+                    <p>Docs</p>
+                </div>
+                <div class="Apps">
+                    <img class="images"  src="images/stack.png" alt="">
+                    <p>Apps</p>
+                </div>
+                <div class="Download">
+                    <img class="images"   src="images/downloading.png" alt="">
+                    <p>Download</p>
+                </div>
+            </div>
+            <div style="margin-top: 80px;">
+                <h3 style="font-family: Arial, Helvetica, sans-serif;">Preview</h3>
+            </div>
+            <div class="preview">
+                <img style="height: 170px; margin-right: 20px;" src="images/8437-209165711_tiny.jpg" alt="">
+                <img style="height: 170px;" src="images/images-play.jpeg" alt="">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
